@@ -54,6 +54,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${LOOK_MA_ATLAS}
 complete -u finger
 
 export PYTHONPATH+=$PYROOT_DIR
+export PYTHONPATH+=$HOME/PyJunk/root_numpy/root_numpy
 
 
 # source $HOME/prefs/deoliveira-omega-prefs.sh
