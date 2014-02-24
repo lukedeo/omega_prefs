@@ -56,6 +56,8 @@ complete -u finger
 export PYTHONPATH+=$PYROOT_DIR
 export PYTHONPATH+=:$HOME/PyJunk/root_numpy/root_numpy
 
+export PATH+=:$HOME/AGILEPack
+
 
 # source $HOME/prefs/deoliveira-omega-prefs.sh
 
