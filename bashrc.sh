@@ -56,5 +56,5 @@ complete -u finger
 export PYTHONPATH+=$PYROOT_DIR
 
 
-source $HOME/prefs/deoliveira-omega-prefs.sh
+# source $HOME/prefs/deoliveira-omega-prefs.sh
 
