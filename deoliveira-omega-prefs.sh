@@ -11,6 +11,7 @@ alias gd='git diff'
 alias gb='git branch'
 alias ga='git add'
 alias gm='git merge --no-ff'
+alias ls='ls --color=auto -h'
 
 mark(){
     b=`pwd`
