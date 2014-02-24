@@ -58,6 +58,8 @@ export PYTHONPATH+=:$HOME/PyJunk/root_numpy/root_numpy
 
 export PATH+=:$HOME/AGILEPack
 
+alias ipython='python -m IPython'
+
 
 # source $HOME/prefs/deoliveira-omega-prefs.sh
 
