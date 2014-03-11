@@ -43,6 +43,8 @@ alias editbash='nano $HOME/.bashrc'
 
 alias findme='qstat hep -t | grep --color=auto "lpd7"'
 
+alias hepcheck='qstat hep -t'
+
 export TERM=xterm-color
 
 
