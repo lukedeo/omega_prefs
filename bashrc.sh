@@ -61,5 +61,10 @@ export PATH+=:$HOME/AGILEPack
 alias ipython='python -m IPython'
 
 
+export CPLUS_INCLUDE_PATH+=:$HOME/Software/hdf5-1.8.12/hdf5/include
+export PATH+=:$HOME/Software/hdf5-1.8.12/hdf5/bin
+export LD_LIBRARY_PATH+=:$HOME/Software/hdf5-1.8.12/hdf5/lib
+
+
 # source $HOME/prefs/deoliveira-omega-prefs.sh
 
