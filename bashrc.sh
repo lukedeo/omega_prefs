@@ -55,6 +55,7 @@ complete -u finger
 
 export PYTHONPATH+=$PYROOT_DIR
 export PYTHONPATH+=:$HOME/PyJunk/root_numpy/root_numpy
+export PYTHONPATH+=:$HOME/TopTaggingPerf
 
 export PATH+=:$HOME/AGILEPack
 
