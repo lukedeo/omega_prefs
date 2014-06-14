@@ -18,8 +18,13 @@ setupAtlas --quiet
 
 # -- specific python distro 
 
-export PATH=/home/hep/share/app/bin:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/hep/share/app/lib
+# export PATH=/home/hep/share/app/bin:$PATH
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/hep/share/app/lib
+
+export ATLAS_PY_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.3-x86_64-slc6-gcc47/sw/lcg/external/Python/2.7.3/x86_64-slc6-gcc47-opt
+
+export PATH=$ATLAS_PY_DIR/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ATLAS_PY_DIR/lib
 
 
 # -- set up the big bitch thats ROOT
