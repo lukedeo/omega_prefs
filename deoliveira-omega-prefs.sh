@@ -68,7 +68,7 @@ prompt-lux(){
 prompt-lux
 
 
-alias findme='qstat hep -t | grep --color=auto "lpd7"'
+alias findme='qstat hep -t | grep --color=auto "$USER"'
 
 
 

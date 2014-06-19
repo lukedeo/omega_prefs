@@ -5,9 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# User specific aliases and functions
-#. /home/hep/share/.hep_bash_profile
-
 # -- ATLAS Specific shit
 source ~dhg3/setup/hep_bash.sh 
 shopt -s expand_aliases
@@ -21,8 +18,10 @@ setupAtlas --quiet
 # export PATH=/home/hep/share/app/bin:$PATH
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/hep/share/app/lib
 
+# ATLAS installation -- not quite sure how good it is...
 export ATLAS_PY_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2.7.3-x86_64-slc6-gcc47/sw/lcg/external/Python/2.7.3/x86_64-slc6-gcc47-opt
 
+# -- make it in front
 export PATH=$ATLAS_PY_DIR/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ATLAS_PY_DIR/lib
 
@@ -33,7 +32,7 @@ export ROOTSYS=${ROOTBASE}
 export PATH+=:${ROOTBASE}/bin
 export LD_LIBRARY_PATH=${ROOTBASE}/lib/root:$LD_LIBRARY_PATH
 
-# --- git 
+# -- git 
 GIT_DIR=~dhg3/public/git-1.8.5.4
 export PATH=${PATH}:${GIT_DIR}/bin
 export MANPATH=${MANPATH}:${GIT_DIR}/share
@@ -48,6 +47,7 @@ if [[ -z "$(find $HOME | grep "gitconfig")" ]]; then
 	git config --global --add color.ui true
 fi
 
+# -- make sure we can 'import ROOT' in python.
 
 PYROOT_DIR=$(root-config --libdir)
 
@@ -56,16 +56,15 @@ PYROOT_DIR=$(root-config --libdir)
 LOOK_MA_ATLAS=/lustre/home/client/apps/fas/Libs/ATLAS/atlas-3.8.4-gcc/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${LOOK_MA_ATLAS}
 
+# -- complete that shit
 complete -u finger
 
+# -- make python find stuff.
 export PYTHONPATH+=$PYROOT_DIR
 export PYTHONPATH+=:$HOME/PyJunk/root_numpy/root_numpy
 export PYTHONPATH+=:/home/hep/golling/lpd7/TopTaggingPerf
 
 export PATH+=:$HOME/AGILEPack
-
-alias ipython='python -m IPython'
-
 
 export CPLUS_INCLUDE_PATH+=:$HOME/Software/hdf5-1.8.12/hdf5/include
 export PATH+=:$HOME/Software/hdf5-1.8.12/hdf5/bin
