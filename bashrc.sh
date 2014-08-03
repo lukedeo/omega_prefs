@@ -25,6 +25,11 @@ export ATLAS_PY_DIR=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/python/2
 export PATH=$ATLAS_PY_DIR/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ATLAS_PY_DIR/lib
 
+# -- my python is better and doest DIE
+export MY_BETTER_PYTHON_DIR=~/Software/bin
+export PATH=$MY_BETTER_PYTHON_DIR/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MY_BETTER_PYTHON_DIR/lib
+
 
 # -- set up the big bitch thats ROOT
 ROOTBASE=/home/hep/baker/dhg3/public/root_5_34_09_roofit
