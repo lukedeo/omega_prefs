@@ -26,7 +26,7 @@ export PATH=$ATLAS_PY_DIR/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ATLAS_PY_DIR/lib
 
 # -- my python is better and doest DIE
-export MY_BETTER_PYTHON_DIR=~/Software/bin
+export MY_BETTER_PYTHON_DIR=~/Software
 export PATH=$MY_BETTER_PYTHON_DIR/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MY_BETTER_PYTHON_DIR/lib
 
