@@ -79,3 +79,8 @@ export MY_BETTER_PYTHON_DIR=~lpd7/Software
 export PATH=$MY_BETTER_PYTHON_DIR/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MY_BETTER_PYTHON_DIR/lib
 
+
+# --pythia / fastjet shit
+
+export PATH=~/Stanford/SLAC/software/libraries/bin:$PATH
+
