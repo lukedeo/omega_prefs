@@ -40,7 +40,8 @@ export MANPATH=${MANPATH}:${GIT_DIR}/share
 
 
 # -- Load some better stuff
-module load Langs/GCC/4.7.2
+# module load Langs/GCC/4.7.2
+module load Langs/GCC/4.8.2
 module load Libraries/Eigen/3.2.0
 
 if [[ -z "$(find $HOME | grep "gitconfig")" ]]; then
